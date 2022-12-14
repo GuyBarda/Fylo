@@ -1,0 +1,22 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+
+//SETUP
+@import './setup/variables';
+@import './setup/mixins';
+@import './setup/typography';
+@import './setup/functions';
+
+// BASE
+@import './base/base';
+@import './base/layout';
+
+// VIEWS
+@import './views/fylo-app';
+
+// CMPS
+@import './cmps/app-header';
+@import './cmps/fylo-info';
+@import './cmps/app-footer';
+@import './cmps/early-access';
+
+//MODALS

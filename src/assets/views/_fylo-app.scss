@@ -1,0 +1,122 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin-bottom: 100px;
+
+        img {
+            margin-bottom: 33px;
+            width: 100%;
+        }
+
+        h2 {
+            margin-bottom: 19px;
+            font-size: em(24px, 16px);
+        }
+
+        p {
+            padding-inline: 20px;
+            font-size: em(14px, 16px);
+            margin-bottom: 33px;
+        }
+
+        button {
+            width: 240px;
+            height: 48px;
+            color: white;
+            box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+            border-radius: 24px;
+            background-image: linear-gradient(152deg, #63e1d9 0%, #34a0cd 100%);
+        }
+    }
+
+    .secondary-hero {
+        padding-inline: 70px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 180px;
+
+        img {
+            width: 50%;
+        }
+
+        .stay-productive {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: start;
+            gap: 20px;
+
+            h2 {
+                text-align: start;
+                line-height: 50px;
+                font-size: em(40px, 16px);
+                font-weight: 700;
+            }
+
+            a {
+                color: #62e0d9;
+            }
+        }
+    }
+
+    .review-list {
+        padding-inline: 70px;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        margin-bottom: 360px;
+
+        .apostrophes {
+            position: absolute;
+            top: -17%;
+            left: -3%;
+            z-index: 10;
+        }
+
+        .review-preview {
+            position: relative;
+            padding: 40px 25px;
+            border-radius: 4px;
+            background-color: #202a3c;
+            font-size: em(14px, 16px);
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            z-index: 20;
+
+            p {
+                line-height: 18px;
+            }
+
+            .user-container {
+                margin-top: 30px;
+                display: flex;
+                gap: 8px;
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    p {
+                        font-size: em(7px, 16px);
+                    }
+                }
+            }
+        }
+    }
+}
