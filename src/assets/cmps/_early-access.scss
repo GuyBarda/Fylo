@@ -4,27 +4,46 @@
     position: absolute;
     bottom: -5%;
 
+    @media (max-width: 600px) {
+        padding-inline: 20px;
+    }
+
     .early-access {
         box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
         border-radius: 9px;
         padding: 40px 77px;
         background-color: #1b2330;
-        // position: absolute;
+
+        @media (max-width: 600px) {
+            padding: 40px 30px;
+        }
 
         h2 {
             font-size: em(32px, 16px);
             margin-bottom: 16px;
+
+            @media (max-width: 600px) {
+                font-size: em(18px, 16px);
+            }
         }
 
         p {
             font-size: em(14px, 16px);
             margin-bottom: 40px;
+
+            @media (max-width: 600px) {
+                margin-bottom: 30px;
+            }
         }
 
         .actions {
             width: 100%;
             display: flex;
             gap: 30px;
+
+            @media (max-width: 600px) {
+                flex-direction: column;
+            }
 
             > * {
                 padding: 15px 25px;
@@ -40,6 +59,10 @@
                     #63e1d9 0%,
                     #34a0cd 100%
                 );
+
+                @media (max-width: 600px) {
+                    width: 100%;
+                }
             }
 
             input {

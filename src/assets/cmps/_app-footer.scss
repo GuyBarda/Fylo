@@ -7,8 +7,13 @@
     padding-top: 200px;
     text-align: start;
 
+    @media (max-width: 600px) {
+        padding: 250px 28px;
+    }
+
     .logo-container {
         margin-bottom: 32px;
+
         img {
             transform: scale(0.7);
         }
@@ -16,6 +21,10 @@
 
     .footer-info {
         display: flex;
+
+        @media (max-width: 600px) {
+            flex-direction: column;
+        }
 
         .footer-text {
             display: flex;
@@ -28,6 +37,7 @@
                 height: 18px;
             }
         }
+
         .footer-contact {
             display: flex;
             flex-direction: column;
